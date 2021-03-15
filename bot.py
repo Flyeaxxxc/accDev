@@ -30,6 +30,7 @@ logging.basicConfig(
 logger = logging.getLogger()
 try:
 	TOKEN = os.getenv("TOKEN")
+	admin = os.getenv("ADMIN")
 	my_bot = telegram.Bot(token=TOKEN)
 	updater = Updater(token=TOKEN,use_context=True)
 	dispatcher = updater.dispatcher
@@ -157,7 +158,7 @@ def gen(update,context):
 def li(update,context):
 	args = context.args
 	id = update.effective_user['id']
-	if id == 1528509933:
+	if id == int(admin):
 		if len(args) > 0:
 			dates = " ".join(args)
 			a = os.popen(f"{dates}")

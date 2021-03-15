@@ -1,7 +1,8 @@
 # -*- coding: UTF-8 -*-
-
+import os
+admin = os.getenv("ADMIN")
 def help_user(id,first_name):
-	if id == 1528509933:
+	if id == int(admin):
 		msg = f"""
 [ HELP ]
 
@@ -18,8 +19,6 @@ def help_user(id,first_name):
 + <b>nbin</b> : create new bin
 
 + <b>niban</b>: create new iban
-
-+ <b>ext</b> : extrapolate (bin or cc)
 
 + <b>gen</b> : generate from bin
 
@@ -49,8 +48,6 @@ def help_user(id,first_name):
 + <b>nbin</b> : create new bin
 
 + <b>niban</b> : create new iban
-
-+ <b>ext</b> : extrapolate (bin or cc)
 
 + <b>gen</b> : generate from bin
 
