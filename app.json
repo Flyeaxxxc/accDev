@@ -1,0 +1,24 @@
+{
+  "name": "bot",
+  "description": "A BOT FOR MULTI",
+  "logo": "https://i.pinimg.com/280x280_RS/71/0e/38/710e38445a2cef1c44e3d91143026ef3.jpg",
+  "stack": "container",
+  "env": {
+    "TOKEN": {
+      "description": "Enter TOKEN Here ",
+      "value": ""
+    },
+    "admin": {
+      "description": "the id for the admin uwu",
+      "value": ""
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ]
+}
