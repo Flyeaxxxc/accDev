@@ -1,0 +1,1 @@
+botCbin: python bot.py
